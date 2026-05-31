@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <div className="site">
       <Nav />
-      <Hero imageSrc="/images/IMG_7055-preview.jpg" />
+      <Hero imageSrc="/images/portfolio/IMG_7055-preview.jpg" />
       <SelectedWork />
       <Featured />
       <Suspense fallback={<ShopSkeleton />}>
