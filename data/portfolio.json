@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "src": "/images/portfolio/waiting-game.png",
+    "alt": "Waiting game",
+    "section": "general"
+  },
+  {
+    "id": "2",
+    "src": "/images/portfolio/devoted.jpg",
+    "alt": "Devoted",
+    "section": "general"
+  },
+  {
+    "id": "3",
+    "src": "/images/portfolio/sumptuous.jpg",
+    "alt": "Sumptuous",
+    "section": "general"
+  },
+  {
+    "id": "4",
+    "src": "/images/portfolio/elegance-1.png",
+    "alt": "Elegance",
+    "section": "general"
+  },
+  {
+    "id": "5",
+    "src": "/images/portfolio/feeling-lovely-1.png",
+    "alt": "Feeling lovely",
+    "section": "general"
+  },
+  {
+    "id": "6",
+    "src": "/images/portfolio/rare-1.png",
+    "alt": "Rare",
+    "section": "general"
+  },
+  {
+    "id": "7",
+    "src": "/images/portfolio/Dakota_617_13x19_preview.jpg",
+    "alt": "Fine art nude study",
+    "section": "fine-art-nude"
+  },
+  {
+    "id": "8",
+    "src": "/images/portfolio/IMG_7055-preview.jpg",
+    "alt": "Fine art nude portrait",
+    "section": "fine-art-nude"
+  },
+  {
+    "id": "9",
+    "src": "/images/portfolio/IMG_0001-11x17-preview.jpg",
+    "alt": "Fine art figure study",
+    "section": "fine-art-nude"
+  }
+]

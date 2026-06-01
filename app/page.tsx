@@ -12,12 +12,12 @@ export default function HomePage() {
     <div className="site">
       <Nav />
       <Hero imageSrc="/images/portfolio/IMG_7055-preview.jpg" />
+      <Statement />
       <SelectedWork />
       <Featured />
       <Suspense fallback={<ShopSkeleton />}>
         <ShopSection />
       </Suspense>
-      <Statement />
       <Footer />
     </div>
   );

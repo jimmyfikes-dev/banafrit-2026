@@ -1,12 +1,12 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import products from '@/data/products.json'
+import Image from "next/image";
+import Link from "next/link";
+import products from "@/data/products.json";
 
 export default function ShopSection() {
-  const shopUrl = process.env.NEXT_PUBLIC_ETSY_SHOP_URL ?? 'https://etsy.com'
+  const shopUrl = process.env.NEXT_PUBLIC_ETSY_SHOP_URL ?? "https://etsy.com";
 
   return (
-    <section className="shop-section">
+    <section className="shop-section" aria-label="Shop">
       <div className="shop-header">
         <p className="section-label">Shop</p>
         <Link
@@ -14,38 +14,46 @@ export default function ShopSection() {
           target="_blank"
           rel="noopener noreferrer"
           className="text-link"
-          style={{ fontSize: '11px' }}
+          style={{ fontSize: "11px" }}
         >
           View all →
         </Link>
       </div>
-      <div className="shop-grid">
+      <ul className="shop-masonry" role="list">
         {products.map((product) => (
-          <Link
-            key={product.id}
-            href={product.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shop-card"
-          >
-            <div className="shop-image">
-              <Image
-                src={product.image}
-                alt={product.name}
-                fill
-                draggable={false}
-                style={{ objectFit: 'cover', pointerEvents: 'none' }}
-                sizes="(max-width: 768px) 50vw, 25vw"
-              />
-            </div>
-            <div className="shop-info">
-              <p className="shop-name">{product.name}</p>
-              <p className="shop-price">{product.price}</p>
-              <span className="shop-tag">{product.tag}</span>
-            </div>
-          </Link>
+          <li key={product.id} className="shop-masonry-item">
+            <Link
+              href={product.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shop-card"
+              aria-label={`${product.name}, ${product.price} — ${product.tag}`}
+            >
+              <div className="shop-image">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  width={600}
+                  height={800}
+                  draggable={false}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    display: "block",
+                    pointerEvents: "none",
+                  }}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="shop-info" aria-hidden="true">
+                  <p className="shop-name">{product.name}</p>
+                  <p className="shop-price">{product.price}</p>
+                  <span className="shop-tag">{product.tag}</span>
+                </div>
+              </div>
+            </Link>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
-  )
+  );
 }

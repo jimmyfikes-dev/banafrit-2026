@@ -1,3 +1,5 @@
+import NewsletterSignup from '@/app/components/NewsletterSignup'
+
 export default function Statement() {
   return (
     <div className="statement">
@@ -6,6 +8,7 @@ export default function Statement() {
         not the performance, but the person.&rdquo;
       </p>
       <p className="statement-attr">On the work</p>
+      <NewsletterSignup />
     </div>
   )
 }
