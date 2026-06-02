@@ -10,6 +10,7 @@ export default function Footer() {
             href="https://www.etsy.com/shop/BanafritArt"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Etsy shop (opens in new tab)"
           >
             Etsy shop
           </Link>
@@ -19,6 +20,7 @@ export default function Footer() {
             href="https://www.youtube.com/@banafritphotography"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="YouTube channel (opens in new tab)"
           >
             YouTube
           </Link>

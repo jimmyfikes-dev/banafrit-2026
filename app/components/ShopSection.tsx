@@ -15,8 +15,9 @@ export default function ShopSection() {
           rel="noopener noreferrer"
           className="text-link"
           style={{ fontSize: "11px" }}
+          aria-label="View all prints on Etsy (opens in new tab)"
         >
-          View all →
+          View all <span aria-hidden="true">→</span>
         </Link>
       </div>
       <ul className="shop-masonry" role="list">

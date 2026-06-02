@@ -1,32 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
+import portfolio from "@/data/portfolio.json";
 
-const WORKS = [
-  {
-    label: "I",
-    src: "/images/portfolio/waiting-game.png",
-    alt: "Waiting game",
-  },
-  { label: "II", src: "/images/portfolio/sumptuous.jpg", alt: "Sumptuous" },
-  { label: "III", src: "/images/portfolio/elegance-1.png", alt: "Elegance" },
-];
+// Featured images are controlled via the `featured` flag in data/portfolio.json.
+// Set featured:true on up to 3 images to control what appears here.
+const ROMAN = ["I", "II", "III"];
+const featured = portfolio.filter((p) => p.featured).slice(0, 3);
 
 export default function SelectedWork() {
   return (
     <section className="section selected-work">
       <p className="section-label">Selected work</p>
       <div className="grid-3">
-        {WORKS.map((work) => (
-          <Link key={work.label} href="/portfolio" className="grid-image">
-            {work.src ? (
-              <Image
-                src={work.src}
-                alt={work.alt}
-                fill
-                style={{ objectFit: "cover" }}
-              />
-            ) : null}
-            <span className="grid-image-label">{work.label}</span>
+        {featured.map((work, i) => (
+          <Link key={work.id} href="/portfolio" className="grid-image">
+            <Image
+              src={work.src}
+              alt={work.alt}
+              fill
+              style={{ objectFit: "cover" }}
+            />
+            <span className="grid-image-label">{ROMAN[i]}</span>
           </Link>
         ))}
       </div>

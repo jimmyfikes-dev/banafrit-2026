@@ -1,8 +1,10 @@
 import Nav from '@/app/components/Nav'
 import Footer from '@/app/components/Footer'
+import { pages } from '@/data/seo'
 
 export const metadata = {
-  title: 'Privacy Policy — Banafrit',
+  title: pages.privacy.title,
+  description: pages.privacy.description,
 }
 
 export default function PrivacyPage() {

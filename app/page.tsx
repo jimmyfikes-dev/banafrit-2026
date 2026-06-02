@@ -7,19 +7,28 @@ import ShopSection from "@/app/components/ShopSection";
 import Statement from "@/app/components/Statement";
 import Footer from "@/app/components/Footer";
 import NewsletterSignup from "@/app/components/NewsletterSignup";
+import { hero, pages } from "@/data/seo";
+
+export const metadata = {
+  title: pages.home.title,
+  description: pages.home.description,
+  openGraph: { images: [pages.home.ogImage] },
+};
 
 export default function HomePage() {
   return (
     <div className="site">
       <Nav />
-      <Hero imageSrc="/images/portfolio/nude/IMG_7055-preview.jpg" />
-      <Statement />
-      <SelectedWork />
-      <NewsletterSignup />
-      {/* <Featured /> */}
-      <Suspense fallback={<ShopSkeleton />}>
-        <ShopSection />
-      </Suspense>
+      <main>
+        <Hero imageSrc={hero.src} imageAlt={hero.alt} />
+        <Statement />
+        <SelectedWork />
+        <NewsletterSignup />
+        {/* <Featured /> */}
+        <Suspense fallback={<ShopSkeleton />}>
+          <ShopSection />
+        </Suspense>
+      </main>
       <Footer />
     </div>
   );

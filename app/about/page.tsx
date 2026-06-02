@@ -1,19 +1,22 @@
 import Nav from "@/app/components/Nav";
 import Footer from "@/app/components/Footer";
+import { pages } from "@/data/seo";
 
 export const metadata = {
-  title: "About — Banafrit",
+  title: pages.about.title,
+  description: pages.about.description,
+  openGraph: { images: [pages.about.ogImage] },
 };
 
 export default function AboutPage() {
   return (
     <div className="site">
       <Nav />
-      <div className="about-page">
+      <main className="about-page">
         <div className="about-content">
           <p className="section-label">About</p>
 
-          <h1 className="about-title">The work</h1>
+          <h1 className="about-title">About the work</h1>
 
           <div className="about-body">
             <p>
@@ -31,7 +34,7 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );

@@ -30,7 +30,7 @@ export default function Hero({ imageSrc, imageAlt = 'Hero photograph' }: HeroPro
           Quiet moments. Natural light. The space between presence and desire.
         </p>
         <Link href="/portfolio" className="hero-cta">
-          View portfolio →
+          View portfolio <span aria-hidden="true">→</span>
         </Link>
       </div>
     </div>

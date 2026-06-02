@@ -19,7 +19,7 @@ export default function Nav() {
           <Link href="/portfolio">Portfolio</Link>
         </li>
         <li>
-          <Link href="https://www.etsy.com/shop/BanafritArt" target="_blank">
+          <Link href="https://www.etsy.com/shop/BanafritArt" target="_blank" rel="noopener noreferrer" aria-label="Shop prints (opens in new tab)">
             Shop prints
           </Link>
         </li>

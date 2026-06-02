@@ -3,130 +3,148 @@
     "id": "1",
     "src": "/images/portfolio/waiting-game.png",
     "alt": "Waiting game",
-    "section": "general"
+    "section": "general",
+    "featured": true
   },
   {
     "id": "3",
     "src": "/images/portfolio/sumptuous.jpg",
     "alt": "Sumptuous",
-    "section": "general"
+    "section": "general",
+    "featured": true
   },
   {
     "id": "n11",
     "src": "/images/portfolio/nude/IMG_7055-preview.jpg",
     "alt": "Figure study",
-    "section": "general"
+    "section": "general",
+    "featured": false
   },
   {
     "id": "n13",
     "src": "/images/portfolio/nude/rare-1.png",
     "alt": "Rare",
-    "section": "general"
+    "section": "general",
+    "featured": false
   },
   {
     "id": "n14",
     "src": "/images/portfolio/nude/IMG_9202-preview.jpg",
     "alt": "Figure study",
-    "section": "general"
+    "section": "general",
+    "featured": false
   },
   {
     "id": "n4",
     "src": "/images/portfolio/nude/IMG_8871_preview.jpg",
     "alt": "Figure study",
-    "section": "general"
+    "section": "general",
+    "featured": false
   },
   {
     "id": "4",
     "src": "/images/portfolio/elegance-1.png",
     "alt": "Elegance",
-    "section": "general"
+    "section": "general",
+    "featured": true
   },
   {
     "id": "5",
     "src": "/images/portfolio/feeling-lovely-1.png",
     "alt": "Feeling lovely",
-    "section": "general"
+    "section": "general",
+    "featured": false
   },
   {
     "id": "7",
     "src": "/images/portfolio/Dakota_617_13x19_preview.jpg",
     "alt": "Fine art study",
-    "section": "general"
+    "section": "general",
+    "featured": false
   },
   {
     "id": "n10",
     "src": "/images/portfolio/nude/IMG_0001-11x17-preview.jpg",
     "alt": "Figure study",
-    "section": "general"
+    "section": "general",
+    "featured": false
   },
   {
     "id": "n5",
     "src": "/images/portfolio/nude/Ivy-7855-preview.jpg",
     "alt": "Ivy",
-    "section": "general"
+    "section": "general",
+    "featured": false
   },
-  
+
   {
     "id": "n1",
     "src": "/images/portfolio/nude/devoted.jpg",
     "alt": "Devoted",
-    "section": "fine-art-nude"
+    "section": "fine-art-nude",
+    "featured": false
   },
   {
     "id": "n2",
     "src": "/images/portfolio/nude/play-1.jpg",
     "alt": "Play",
-    "section": "fine-art-nude"
+    "section": "fine-art-nude",
+    "featured": false
   },
   {
     "id": "n16",
     "src": "/images/portfolio/nude/Ivy-8550-preview.jpg",
     "alt": "Ivy",
-    "section": "fine-art-nude"
+    "section": "fine-art-nude",
+    "featured": false
   },
   {
     "id": "n3",
     "src": "/images/portfolio/nude/IMG_8589_preview.jpg",
     "alt": "Figure study",
-    "section": "fine-art-nude"
+    "section": "fine-art-nude",
+    "featured": false
   },
-  
   {
     "id": "n6",
     "src": "/images/portfolio/nude/Ivy-9102-preview.jpg",
     "alt": "Ivy",
-    "section": "fine-art-nude"
+    "section": "fine-art-nude",
+    "featured": false
   },
   {
     "id": "n7",
     "src": "/images/portfolio/nude/Lilith-Dagon-1255-edited.jpg",
     "alt": "Lilith Dagon",
-    "section": "fine-art-nude"
+    "section": "fine-art-nude",
+    "featured": false
   },
   {
     "id": "n8",
     "src": "/images/portfolio/nude/Lilith-Dagon-203-edited.jpg",
     "alt": "Lilith Dagon",
-    "section": "fine-art-nude"
+    "section": "fine-art-nude",
+    "featured": false
   },
   {
     "id": "n9",
     "src": "/images/portfolio/nude/dakota_6535_preview-1.jpg",
     "alt": "Dakota",
-    "section": "fine-art-nude"
+    "section": "fine-art-nude",
+    "featured": false
   },
-  
-  
   {
     "id": "n12",
     "src": "/images/portfolio/nude/yes-daddy-1.png",
     "alt": "Yes daddy",
-    "section": "fine-art-nude"
+    "section": "fine-art-nude",
+    "featured": false
   },
   {
     "id": "n15",
     "src": "/images/portfolio/nude/Ivy-8384-preview.jpg",
     "alt": "Ivy",
-    "section": "fine-art-nude"
+    "section": "fine-art-nude",
+    "featured": false
   }
 ]

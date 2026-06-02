@@ -68,7 +68,7 @@ export default function ShootPage() {
 
       {/* Back nav */}
       <div className="shoot-back">
-        <Link href="/portfolio" className="text-link">← Back to portfolio</Link>
+        <Link href="/portfolio" className="text-link"><span aria-hidden="true">← </span>Back to portfolio</Link>
       </div>
 
       <Footer />
