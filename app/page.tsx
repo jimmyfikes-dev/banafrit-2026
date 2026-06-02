@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <div className="site">
       <Nav />
-      <Hero imageSrc="/images/portfolio/IMG_7055-preview.jpg" />
+      <Hero imageSrc="/images/portfolio/nude/IMG_7055-preview.jpg" />
       <Statement />
       <SelectedWork />
       <NewsletterSignup />
