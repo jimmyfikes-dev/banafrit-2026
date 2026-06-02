@@ -6,15 +6,33 @@
     "section": "general"
   },
   {
-    "id": "2",
-    "src": "/images/portfolio/devoted.jpg",
-    "alt": "Devoted",
-    "section": "general"
-  },
-  {
     "id": "3",
     "src": "/images/portfolio/sumptuous.jpg",
     "alt": "Sumptuous",
+    "section": "general"
+  },
+  {
+    "id": "n11",
+    "src": "/images/portfolio/nude/IMG_7055-preview.jpg",
+    "alt": "Figure study",
+    "section": "general"
+  },
+  {
+    "id": "n13",
+    "src": "/images/portfolio/nude/rare-1.png",
+    "alt": "Rare",
+    "section": "general"
+  },
+  {
+    "id": "n14",
+    "src": "/images/portfolio/nude/IMG_9202-preview.jpg",
+    "alt": "Figure study",
+    "section": "general"
+  },
+  {
+    "id": "n4",
+    "src": "/images/portfolio/nude/IMG_8871_preview.jpg",
+    "alt": "Figure study",
     "section": "general"
   },
   {
@@ -30,27 +48,85 @@
     "section": "general"
   },
   {
-    "id": "6",
-    "src": "/images/portfolio/rare-1.png",
-    "alt": "Rare",
+    "id": "7",
+    "src": "/images/portfolio/Dakota_617_13x19_preview.jpg",
+    "alt": "Fine art study",
     "section": "general"
   },
   {
-    "id": "7",
-    "src": "/images/portfolio/Dakota_617_13x19_preview.jpg",
-    "alt": "Fine art nude study",
+    "id": "n10",
+    "src": "/images/portfolio/nude/IMG_0001-11x17-preview.jpg",
+    "alt": "Figure study",
+    "section": "general"
+  },
+  {
+    "id": "n5",
+    "src": "/images/portfolio/nude/Ivy-7855-preview.jpg",
+    "alt": "Ivy",
+    "section": "general"
+  },
+  
+  {
+    "id": "n1",
+    "src": "/images/portfolio/nude/devoted.jpg",
+    "alt": "Devoted",
     "section": "fine-art-nude"
   },
   {
-    "id": "8",
-    "src": "/images/portfolio/IMG_7055-preview.jpg",
-    "alt": "Fine art nude portrait",
+    "id": "n2",
+    "src": "/images/portfolio/nude/play-1.jpg",
+    "alt": "Play",
     "section": "fine-art-nude"
   },
   {
-    "id": "9",
-    "src": "/images/portfolio/IMG_0001-11x17-preview.jpg",
-    "alt": "Fine art figure study",
+    "id": "n16",
+    "src": "/images/portfolio/nude/Ivy-8550-preview.jpg",
+    "alt": "Ivy",
+    "section": "fine-art-nude"
+  },
+  {
+    "id": "n3",
+    "src": "/images/portfolio/nude/IMG_8589_preview.jpg",
+    "alt": "Figure study",
+    "section": "fine-art-nude"
+  },
+  
+  {
+    "id": "n6",
+    "src": "/images/portfolio/nude/Ivy-9102-preview.jpg",
+    "alt": "Ivy",
+    "section": "fine-art-nude"
+  },
+  {
+    "id": "n7",
+    "src": "/images/portfolio/nude/Lilith-Dagon-1255-edited.jpg",
+    "alt": "Lilith Dagon",
+    "section": "fine-art-nude"
+  },
+  {
+    "id": "n8",
+    "src": "/images/portfolio/nude/Lilith-Dagon-203-edited.jpg",
+    "alt": "Lilith Dagon",
+    "section": "fine-art-nude"
+  },
+  {
+    "id": "n9",
+    "src": "/images/portfolio/nude/dakota_6535_preview-1.jpg",
+    "alt": "Dakota",
+    "section": "fine-art-nude"
+  },
+  
+  
+  {
+    "id": "n12",
+    "src": "/images/portfolio/nude/yes-daddy-1.png",
+    "alt": "Yes daddy",
+    "section": "fine-art-nude"
+  },
+  {
+    "id": "n15",
+    "src": "/images/portfolio/nude/Ivy-8384-preview.jpg",
+    "alt": "Ivy",
     "section": "fine-art-nude"
   }
 ]

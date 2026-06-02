@@ -161,6 +161,10 @@ a { color: inherit; text-decoration: none; }
   padding: 4rem 3rem;
 }
 
+.section.selected-work {
+  padding: 0 3rem;
+}
+
 .section-label {
   font-size: 11px;
   letter-spacing: 0.16em;
@@ -338,7 +342,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ── Statement ── */
 .statement {
-  padding: 5rem 3rem;
+  padding: 4rem 3rem 3rem;
   text-align: center;
   border-top: 0.5px solid var(--color-border-tertiary);
   max-width: 580px;
@@ -364,7 +368,9 @@ a { color: inherit; text-decoration: none; }
 /* ── Newsletter ── */
 .newsletter-signup {
   text-align: center;
-  margin-top: 2rem;
+  padding: 3rem;
+  border-top: 0.5px solid var(--color-border-tertiary);
+  border-bottom: 0.5px solid var(--color-border-tertiary);
 }
 
 .newsletter-heading {
@@ -679,22 +685,21 @@ a { color: inherit; text-decoration: none; }
 }
 
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5px;
+  columns: 3;
+  column-gap: 1.5px;
 }
 
 .portfolio-item {
-  position: relative;
-  aspect-ratio: 3 / 4;
+  break-inside: avoid;
+  margin-bottom: 1.5px;
   background: var(--color-background-secondary);
   overflow: hidden;
 }
 
 .portfolio-item img {
-  object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Fine Art Nude section */
@@ -719,9 +724,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 .portfolio-nude-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5px;
+  columns: 3;
+  column-gap: 1.5px;
   position: relative;
 }
 
@@ -729,6 +733,19 @@ a { color: inherit; text-decoration: none; }
   filter: blur(18px);
   pointer-events: none;
   user-select: none;
+}
+
+.portfolio-nude-grid .portfolio-item {
+  break-inside: avoid;
+  margin-bottom: 1.5px;
+  aspect-ratio: unset;
+  height: auto;
+}
+
+.portfolio-nude-grid .portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .portfolio-nude-reveal {
@@ -751,8 +768,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 768px) {
-  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
-  .portfolio-nude-grid { grid-template-columns: repeat(2, 1fr); }
+  .portfolio-grid { columns: 2; }
+  .portfolio-nude-grid { columns: 2; }
   .portfolio-section { padding: 2.5rem 1.5rem; }
   .portfolio-nude-section { padding: 0 1.5rem 3rem; }
 }

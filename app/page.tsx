@@ -6,6 +6,7 @@ import Featured from "@/app/components/Featured";
 import ShopSection from "@/app/components/ShopSection";
 import Statement from "@/app/components/Statement";
 import Footer from "@/app/components/Footer";
+import NewsletterSignup from "@/app/components/NewsletterSignup";
 
 export default function HomePage() {
   return (
@@ -14,7 +15,8 @@ export default function HomePage() {
       <Hero imageSrc="/images/portfolio/IMG_7055-preview.jpg" />
       <Statement />
       <SelectedWork />
-      <Featured />
+      <NewsletterSignup />
+      {/* <Featured /> */}
       <Suspense fallback={<ShopSkeleton />}>
         <ShopSection />
       </Suspense>

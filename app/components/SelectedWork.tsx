@@ -13,7 +13,7 @@ const WORKS = [
 
 export default function SelectedWork() {
   return (
-    <section className="section">
+    <section className="section selected-work">
       <p className="section-label">Selected work</p>
       <div className="grid-3">
         {WORKS.map((work) => (
