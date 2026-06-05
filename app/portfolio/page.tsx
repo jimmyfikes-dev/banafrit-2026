@@ -18,6 +18,12 @@ export default function PortfolioPage() {
     <div className="site">
       <Nav />
       <main>
+        <div className="portfolio-notice">
+          <p>
+            Most images are available as custom prints — sizes determined per image.{' '}
+            <a href="/contact">Contact us</a> for details or to request a specific piece.
+          </p>
+        </div>
         <section className="portfolio-section">
           <p className="section-label">Selected work</p>
           <div className="portfolio-grid">
