@@ -29,7 +29,7 @@ export default function PortfolioGrid({ images }: { images: Image[] }) {
       <div className="portfolio-nude-header">
         <p className="portfolio-nude-title">Mature</p>
       </div>
-      <div style={{ position: "relative" }}>
+      <div className="portfolio-nude-wrapper">
         <div
           className={`portfolio-nude-grid${ready && !subscribed ? " blurred" : ""}`}
         >

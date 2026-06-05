@@ -7,6 +7,7 @@ import ShopSection from "@/app/components/ShopSection";
 import Statement from "@/app/components/Statement";
 import Footer from "@/app/components/Footer";
 import NewsletterSignup from "@/app/components/NewsletterSignup";
+// import VideoSection from "@/app/components/VideoSection";
 import { hero, pages } from "@/data/seo";
 
 export const metadata = {
@@ -23,6 +24,7 @@ export default function HomePage() {
         <Hero imageSrc={hero.src} imageAlt={hero.alt} />
         <Statement />
         <SelectedWork />
+        {/* <VideoSection /> */}
         <NewsletterSignup />
         {/* <Featured /> */}
         <Suspense fallback={<ShopSkeleton />}>
