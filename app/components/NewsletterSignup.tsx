@@ -36,35 +36,44 @@ export default function NewsletterSignup({
 
   if (status === 'success') {
     return (
-      <div className="newsletter-success">
-        <p>You&rsquo;re in — thank you.</p>
-      </div>
+      <section className="newsletter-signup" aria-label="Newsletter">
+        <div className="newsletter-card">
+          <p className="newsletter-success">You&rsquo;re in — thank you.</p>
+        </div>
+      </section>
     )
   }
 
   return (
-    <div className="newsletter-signup">
-      {heading && <p className="newsletter-heading">{heading}</p>}
-      {subheading && <p className="newsletter-sub">{subheading}</p>}
-      <form className="newsletter-form" onSubmit={handleSubmit}>
-        <input
-          className="newsletter-input"
-          type="email"
-          placeholder="Your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-          aria-label="Email address"
-        />
-        <button
-          className="newsletter-submit"
-          type="submit"
-          disabled={status === 'submitting'}
-        >
-          {status === 'submitting' ? 'Subscribing…' : 'Subscribe'}
-        </button>
-      </form>
-      {status === 'error' && <p className="newsletter-error">{error}</p>}
-    </div>
+    <section className="newsletter-signup" aria-label="Newsletter signup">
+      <div className="newsletter-card">
+        {heading && <p className="newsletter-heading" aria-hidden="true">{heading}</p>}
+        {subheading && <p className="newsletter-sub">{subheading}</p>}
+        <form className="newsletter-form" onSubmit={handleSubmit} noValidate>
+          <label htmlFor="newsletter-email" className="sr-only">Email address</label>
+          <input
+            id="newsletter-email"
+            className="newsletter-input"
+            type="email"
+            placeholder="Your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            autoComplete="email"
+          />
+          <button
+            className="newsletter-submit"
+            type="submit"
+            disabled={status === 'submitting'}
+            aria-busy={status === 'submitting'}
+          >
+            {status === 'submitting' ? 'Subscribing…' : 'Subscribe'}
+          </button>
+        </form>
+        {status === 'error' && (
+          <p className="newsletter-error" role="alert">{error}</p>
+        )}
+      </div>
+    </section>
   )
 }

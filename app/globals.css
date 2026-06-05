@@ -365,12 +365,36 @@ a { color: inherit; text-decoration: none; }
   color: var(--color-text-secondary);
 }
 
+/* ── Accessibility utilities ── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ── Newsletter ── */
 .newsletter-signup {
   text-align: center;
-  padding: 3rem;
-  border-top: 0.5px solid var(--color-border-tertiary);
-  border-bottom: 0.5px solid var(--color-border-tertiary);
+  /* Outer section — no background, lets blurred images show through */
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter-card {
+  background: var(--color-background-primary);
+  border: 0.5px solid var(--color-border-secondary);
+  border-radius: 2px;
+  padding: 2.5rem 3rem;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.07);
 }
 
 .newsletter-heading {

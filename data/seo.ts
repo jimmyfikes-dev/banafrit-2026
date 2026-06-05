@@ -20,7 +20,7 @@ export const titleTemplate = '%s — Banafrit'
 
 /** Default meta description — used on the home page and as fallback */
 export const defaultDescription =
-  'Fine art photography. Quiet moments. Natural light. Prints available.'
+  'Banafrit is a fine art nude and boudoir photography project — intimate portraiture and figure study. Limited edition prints on Hahnemühle paper, available to order.'
 
 /** Default OG image (1200×630). Place the file at /public/images/og-image.jpg */
 export const defaultOgImage = {
@@ -56,21 +56,21 @@ export const pages = {
   portfolio: {
     title: 'Portfolio',
     description:
-      'Selected fine art photography by Banafrit — portraiture, boudoir, and figure study. Prints available.',
+      'Fine art nude and boudoir photography by Banafrit — intimate portraiture and figure studies shot in natural light. Limited edition prints available.',
     ogImage: defaultOgImage,
   },
 
   about: {
     title: 'About',
     description:
-      'Banafrit is a fine art photography project exploring portraiture, boudoir, and figure study. Fine art prints on Hahnemühle paper.',
+      'Banafrit is a fine art nude photography project — portraiture, boudoir, and figure study centered on authenticity. Fine art prints on Hahnemühle Bamboo Gloss Baryta paper.',
     ogImage: defaultOgImage,
   },
 
   contact: {
     title: 'Contact',
     description:
-      'Get in touch with Banafrit Photography — model inquiries, print orders, licensing, and collaborations.',
+      'Contact Banafrit — model inquiries, fine art print orders, licensing, and collaboration requests.',
     ogImage: defaultOgImage,
   },
 
