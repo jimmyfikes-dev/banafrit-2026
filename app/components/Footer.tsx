@@ -1,4 +1,7 @@
+'use client'
+
 import Link from "next/link";
+import { track } from "@/lib/analytics";
 
 export default function Footer() {
   return (
@@ -11,6 +14,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Etsy shop (opens in new tab)"
+            onClick={() => track.etsyClick('footer')}
           >
             Etsy shop
           </Link>

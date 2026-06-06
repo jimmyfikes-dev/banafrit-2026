@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { subscribe } from "@/app/actions/subscribe";
+import { track } from "@/lib/analytics";
 
 interface NewsletterSignupProps {
   onSuccess?: () => void;
@@ -29,6 +30,7 @@ export default function NewsletterSignup({
 
     if (result.success) {
       setStatus("success");
+      track.newsletterSignup();
       onSuccess?.();
     } else {
       setStatus("error");

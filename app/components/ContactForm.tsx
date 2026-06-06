@@ -1,6 +1,8 @@
 'use client'
 
 import { useForm, ValidationError } from '@formspree/react'
+import { useEffect } from 'react'
+import { track } from '@/lib/analytics'
 
 const SUBJECTS = [
   'Questions or concerns',
@@ -14,6 +16,10 @@ const SUBJECTS = [
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm('mvzyeglp')
+
+  useEffect(() => {
+    if (state.succeeded) track.contactSubmit()
+  }, [state.succeeded])
 
   if (state.succeeded) {
     return (

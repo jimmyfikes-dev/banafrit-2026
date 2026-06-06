@@ -1,5 +1,8 @@
+'use client'
+
 import Link from "next/link";
 import Image from "next/image";
+import { track } from "@/lib/analytics";
 
 export default function Nav() {
   return (
@@ -19,7 +22,13 @@ export default function Nav() {
           <Link href="/portfolio">Portfolio</Link>
         </li>
         <li>
-          <Link href="https://www.etsy.com/shop/BanafritArt" target="_blank" rel="noopener noreferrer" aria-label="Shop prints (opens in new tab)">
+          <Link
+            href="https://www.etsy.com/shop/BanafritArt"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Shop prints (opens in new tab)"
+            onClick={() => track.etsyClick('nav')}
+          >
             Shop prints
           </Link>
         </li>

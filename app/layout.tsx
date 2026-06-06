@@ -1,7 +1,10 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import AgeGateProvider from '@/app/components/AgeGateProvider'
 import { defaultTitle, titleTemplate, defaultDescription, defaultOgImage, siteUrl, siteName } from '@/data/seo'
 import './globals.css'
+
+const GA_ID = 'G-3T6FCH4PMJ'
 
 export const metadata: Metadata = {
   title: {
@@ -32,6 +35,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
+      </head>
       <body>
         <AgeGateProvider>{children}</AgeGateProvider>
       </body>

@@ -1,8 +1,15 @@
 [
   {
     "id": "1",
-    "src": "/images/portfolio/waiting-game.png",
+    "src": "/images/portfolio/waiting-game.jpg",
     "alt": "Waiting game",
+    "section": "general",
+    "featured": false
+  },
+  {
+    "id": "1",
+    "src": "/images/portfolio/Kyla-213-mature.jpg",
+    "alt": "Topless black woman with curly hair sitting on a couch",
     "section": "general",
     "featured": true
   },
@@ -12,6 +19,13 @@
     "alt": "Sumptuous",
     "section": "general",
     "featured": true
+  },
+  {
+    "id": "3",
+    "src": "/images/portfolio/Kat-IMG_0739-mature.jpg",
+    "alt": "Blonde woman topless with glittery skirt on.",
+    "section": "general",
+    "featured": false
   },
   {
     "id": "n11",
@@ -46,11 +60,25 @@
     "src": "/images/portfolio/elegance-1.png",
     "alt": "Elegance",
     "section": "general",
-    "featured": true
+    "featured": false
+  },
+  {
+    "id": "n6",
+    "src": "/images/portfolio/Ivy-9102-preview.jpg",
+    "alt": "Woman laying face down on a bed sensual glare on her face.",
+    "section": "general",
+    "featured": false
+  },
+  {
+    "id": "n6",
+    "src": "/images/portfolio/IMG_7709-preview.jpg",
+    "alt": "Topless black woman sitting on the edge of a couch in front of a window with dramatic lighting.",
+    "section": "general",
+    "featured": false
   },
   {
     "id": "5",
-    "src": "/images/portfolio/feeling-lovely-1.png",
+    "src": "/images/portfolio/Ivy-Kyla-1389.jpg",
     "alt": "Feeling lovely",
     "section": "general",
     "featured": false
@@ -81,6 +109,20 @@
     "src": "/images/portfolio/nude/Ivy-7855-preview.jpg",
     "alt": "Athletic sexy nude woman",
     "section": "general",
+    "featured": true
+  },
+  {
+    "id": "n1",
+    "src": "/images/portfolio/nude/Dakota-312-mature.jpg",
+    "alt": "Nude black woman with see-through robe sitting on kitchen counter.",
+    "section": "fine-art-nude",
+    "featured": false
+  },
+  {
+    "id": "n12",
+    "src": "/images/portfolio/nude/Ivy-IMG_8865-mature.jpg",
+    "alt": "Athletic woman standing nude by  window with natural lights",
+    "section": "fine-art-nude",
     "featured": false
   },
   {
@@ -94,6 +136,20 @@
     "id": "n1",
     "src": "/images/portfolio/nude/Lilith-1305-mature.jpg",
     "alt": "Nude latina woman with long black hair bending over",
+    "section": "fine-art-nude",
+    "featured": false
+  },
+  {
+    "id": "n12",
+    "src": "/images/portfolio/nude/Ivy-IMG_9643-mature.jpg",
+    "alt": "Athletic woman with black hair laying on a decorative couch with her legs open",
+    "section": "fine-art-nude",
+    "featured": false
+  },
+  {
+    "id": "n1",
+    "src": "/images/portfolio/nude/Dakota-667-mature.jpg",
+    "alt": "Nude black woman leaning on the side of the bed.",
     "section": "fine-art-nude",
     "featured": false
   },
@@ -161,16 +217,16 @@
     "featured": false
   },
   {
-    "id": "n6",
-    "src": "/images/portfolio/nude/Ivy-9102-preview.jpg",
-    "alt": "Ivy",
+    "id": "n1",
+    "src": "/images/portfolio/nude/Inna-IMG_3039-mature.jpg",
+    "alt": "Sensual Ukanian woman nude in front of full length mirror",
     "section": "fine-art-nude",
     "featured": false
   },
   {
-    "id": "n1",
-    "src": "/images/portfolio/nude/Inna-IMG_3039-mature.jpg",
-    "alt": "Sensual Ukanian woman nude in front of full length mirror",
+    "id": "n12",
+    "src": "/images/portfolio/nude/Ivy-IMG_8726-mature.jpg",
+    "alt": "Athletic woman topless with panties",
     "section": "fine-art-nude",
     "featured": false
   },
