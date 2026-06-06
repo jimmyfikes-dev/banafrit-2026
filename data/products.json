@@ -9,6 +9,24 @@
     "url": "https://www.etsy.com/listing/4469255312/s"
   },
   {
+    "id": "2",
+    "name": "Fine Art Portrait Print | Moody Natural Light Black Woman Wall Art",
+    "price": "$35 to $130",
+    "tag": "Print",
+    "orientation": "portrait",
+    "image": "/images/portfolio/sumptuous.jpg",
+    "url": "https://www.etsy.com/listing/4512320733/"
+  },
+  {
+    "id": "3",
+    "name": "Topless Boudoir Portrait | Black Woman Fine Art Photography | Hahnemuhle Bamboo Gloss Baryta | Multiple Sizes",
+    "price": "$35 to $130",
+    "tag": "Print",
+    "orientation": "landscape",
+    "image": "/images/portfolio/break-time-1.png",
+    "url": "https://www.etsy.com/listing/4472384837"
+  },
+  {
     "id": "3",
     "name": "Nude Figure Study | Black Woman Boudoir Portrait | Hahnemuhle Bamboo Gloss Baryta | Multiple Sizes",
     "price": "$35 to $130",
@@ -17,7 +35,6 @@
     "image": "/images/portfolio/Dakota_617_13x19_preview.jpg",
     "url": "https://www.etsy.com/listing/4469301956/"
   },
-  
   {
     "id": "5",
     "name": "Nude Boudoir Portrait | Black Woman Figure Study | Hahnemuhle Bamboo Gloss Baryta | Multiple Sizes",
@@ -35,13 +52,50 @@
     "orientation": "landscape",
     "image": "/images/portfolio/nude/IMG_0001-11x17-preview.jpg",
     "url": "https://www.etsy.com/listing/4469196361/"
-  },{
+  },
+  {
     "id": "2",
-    "name": "Fine Art Portrait Print | Moody Natural Light Black Woman Wall Art",
+    "name": "Black Woman Boudoir Portrait | Hahnemühle Bamboo Gloss Baryta | Multiple Sizes",
     "price": "$35 to $130",
     "tag": "Print",
     "orientation": "portrait",
-    "image": "/images/portfolio/sumptuous.jpg",
-    "url": "https://www.etsy.com/listing/4512320733/"
+    "image": "/images/portfolio/dakota-daybed.jpg",
+    "url": "https://www.etsy.com/listing/4512286229"
+  },
+  {
+    "id": "2",
+    "name": "Fine Art Boudoir Portrait Print | Intimate Natural Light Black Woman Wall Art",
+    "price": "$35 to $130",
+    "tag": "Print",
+    "orientation": "portrait",
+    "image": "/images/portfolio/Dakota-IMG_4644.jpg",
+    "url": "https://www.etsy.com/listing/4517068481"
+  },
+  {
+    "id": "2",
+    "name": "Fine Art Figure Study Print | Dramatic Natural Light Black Woman Wall Art",
+    "price": "$35 to $130",
+    "tag": "Print",
+    "orientation": "portrait",
+    "image": "/images/portfolio/IMG_7709-preview.jpg",
+    "url": "https://www.etsy.com/listing/4517028875"
+  },
+  {
+    "id": "2",
+    "name": "Boudoir Window Portrait | Fine Art Bedroom Photography | Hahnemuhle Bamboo Gloss Baryta | Multiple Sizes",
+    "price": "$35 to $130",
+    "tag": "Print",
+    "orientation": "portrait",
+    "image": "/images/portfolio/Inna-IMG_2813.jpg",
+    "url": "https://www.etsy.com/listing/4469201425"
+  },
+  {
+    "id": "2",
+    "name": "Intimate Portrait | Black Woman Giclée | Hahnemuhle Bamboo Gloss Baryta | Multiple Sizes",
+    "price": "$35 to $130",
+    "tag": "Print",
+    "orientation": "portrait",
+    "image": "/images/portfolio/IMG_6786-preview.jpg",
+    "url": "https://www.etsy.com/listing/4466087166"
   }
 ]
