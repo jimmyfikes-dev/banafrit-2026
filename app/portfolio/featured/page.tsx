@@ -49,6 +49,7 @@ const SHOOT = {
     {
       src: "/images/portfolio/featured/Willa_3713-preview.jpg",
       alt: "Fine art figure study — woman in black dress, back to camera, gazing upward before large window, soft overcast light",
+      landscape: true,
     },
     {
       src: "/images/portfolio/featured/Willa_3723-preview.jpg",
@@ -77,6 +78,7 @@ const SHOOT = {
     {
       src: "/images/portfolio/featured/Willa_3829-preview.jpg",
       alt: "Fine art nude portrait — woman standing confidently before floor-to-ceiling window topless in elegant black panties, intimate natural light",
+      landscape: true,
     },
     {
       src: "/images/portfolio/featured/Willa_4170-preview.jpg",
@@ -91,24 +93,36 @@ const SHOOT = {
       alt: "Fine art portrait — woman in white long-sleeve dress, mid-movement, natural light through glass door",
     },
     {
+      src: "/images/portfolio/featured/Willa_4896-preview.jpg",
+      alt: "Fine art nude — woman standing near bathroom vanity, natural window light, freestanding tub in background",
+    },
+    {
       src: "/images/portfolio/featured/Willa_4355-preview.jpg",
       alt: "Fine art nude — topless woman reclining on cream sofa un-buttoning an elegant white dress, architectural interior, natural side light",
+      landscape: true,
     },
     {
       src: "/images/portfolio/featured/Willa_4441-preview.jpg",
       alt: "Fine art nude — woman reclining on cream sofa, architectural interior, natural side light",
+      landscape: true,
+    },
+    {
+      src: "/images/portfolio/featured/Willa_4392-preview.jpg",
+      alt: "Fine art nude — Nude woman reclining on a hardwood foor in front of a cream sofa, architectural interior, natural side light",
+      landscape: true,
     },
     {
       src: "/images/portfolio/featured/Willa_4541-preview.jpg",
       alt: "Fine art nude — woman seated on edge of freestanding soaking tub, backlit by window, luxury bathroom",
+      landscape: true,
     },
     {
       src: "/images/portfolio/featured/Willa_4866-preview.jpg",
       alt: "Fine art nude — woman kneeling on freestanding bathtub, hair in motion, dramatic backlit silhouette",
     },
     {
-      src: "/images/portfolio/featured/Willa_4896-preview.jpg",
-      alt: "Fine art nude — woman standing near bathroom vanity, natural window light, freestanding tub in background",
+      src: "/images/portfolio/featured/Willa_5536-preview.jpg",
+      alt: "Fine art nude — woman kneeling on freestanding bathtub, hair in motion, dramatic backlit silhouette",
     },
   ],
 };
@@ -147,13 +161,20 @@ export default function ShootPage() {
       {/* Image grid */}
       <div className="shoot-grid">
         {SHOOT.images.map((img, i) => (
-          <div key={i} className="shoot-grid-item">
+          <div
+            key={i}
+            className={`shoot-grid-item${img.landscape ? " shoot-grid-item--landscape" : ""}`}
+          >
             <Image
               src={img.src}
               alt={img.alt}
               fill
               style={{ objectFit: "cover" }}
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes={
+                img.landscape
+                  ? "(max-width: 768px) 100vw, 100vw"
+                  : "(max-width: 768px) 100vw, 50vw"
+              }
             />
           </div>
         ))}
