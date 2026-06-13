@@ -74,6 +74,13 @@ export const pages = {
     ogImage: defaultOgImage,
   },
 
+  featured: {
+    title: 'Unguarded — Featured Series',
+    description:
+      'A fine art figure study by Banafrit. Natural light portraits and intimate nude photography — a woman entirely herself, unguarded and unhurried. Houston, TX.',
+    ogImage: defaultOgImage,
+  },
+
   privacy: {
     title: 'Privacy Policy',
     description: 'Privacy policy for Banafrit Photography.',
