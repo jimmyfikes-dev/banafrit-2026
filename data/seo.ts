@@ -9,35 +9,35 @@
 
 // ─── Site-wide defaults ──────────────────────────────────────────────────────
 
-export const siteName = 'Banafrit'
-export const siteUrl = 'https://banafrit.com'
+export const siteName = "Banafrit";
+export const siteUrl = "https://banafrit.com";
 
 /** Shown in browser tab and as OG title when no page-level override is set */
-export const defaultTitle = 'Banafrit — Fine Art Photography'
+export const defaultTitle = "Banafrit — Fine Art Photography";
 
 /** Appended to every page title: "Portfolio — Banafrit" */
-export const titleTemplate = '%s — Banafrit'
+export const titleTemplate = "%s — Banafrit";
 
 /** Default meta description — used on the home page and as fallback */
 export const defaultDescription =
-  'Banafrit is a fine art nude and boudoir photography project — intimate portraiture and figure study. Limited edition prints on Hahnemühle paper, available to order.'
+  "Banafrit is a fine art nude and boudoir photography project — intimate portraiture and figure study. Limited edition prints on Hahnemühle paper, available to order.";
 
 /** Default OG image (1200×630). Place the file at /public/images/og-image.jpg */
 export const defaultOgImage = {
-  url: '/images/og-image.jpg',
+  url: "/images/og-image.jpg",
   width: 1200,
   height: 630,
-  alt: 'Banafrit fine art photography',
-}
+  alt: "Banafrit fine art photography",
+};
 
 // ─── Hero image ───────────────────────────────────────────────────────────────
 
 export const hero = {
   /** Path to the hero image (relative to /public) */
-  src: '/images/portfolio/nude/IMG_7055-preview.jpg',
+  src: "/images/portfolio/nude/IMG_7055-preview.jpg",
   /** Alt text for the hero image — be descriptive for SEO */
-  alt: 'Fine art figure study — natural light portrait',
-}
+  alt: "Fine art figure study — natural light portrait",
+};
 
 // ─── Per-page metadata ────────────────────────────────────────────────────────
 //
@@ -54,51 +54,56 @@ export const pages = {
   },
 
   portfolio: {
-    title: 'Portfolio',
+    title: "Portfolio",
     description:
-      'Fine art nude and boudoir photography by Banafrit — intimate portraiture and figure studies shot in natural light. Limited edition prints available.',
+      "Fine art nude and boudoir photography by Banafrit — intimate portraiture and figure studies shot in natural light. Limited edition prints available.",
     ogImage: defaultOgImage,
   },
 
   about: {
-    title: 'About',
+    title: "About",
     description:
-      'Banafrit is a fine art nude photography project — portraiture, boudoir, and figure study centered on authenticity. Fine art prints on Hahnemühle Bamboo Gloss Baryta paper.',
+      "Banafrit is a fine art nude photography project — portraiture, boudoir, and figure study centered on authenticity. Fine art prints on Hahnemühle Bamboo Gloss Baryta paper.",
     ogImage: defaultOgImage,
   },
 
   contact: {
-    title: 'Contact',
+    title: "Contact",
     description:
-      'Contact Banafrit — model inquiries, fine art print orders, licensing, and collaboration requests.',
+      "Contact Banafrit — model inquiries, fine art print orders, licensing, and collaboration requests.",
     ogImage: defaultOgImage,
   },
 
   featured: {
-    title: 'Unguarded — Featured Series',
+    title: "Unguarded — Featured Series",
     description:
-      'A fine art figure study by Banafrit. Natural light portraits and intimate nude photography — a woman entirely herself, unguarded and unhurried. Houston, TX.',
-    ogImage: defaultOgImage,
+      "A fine art figure study by Banafrit. Natural light portraits and intimate nude photography — a woman entirely herself, unguarded and unhurried. Houston, TX.",
+    ogImage: {
+      url: "/images/portfolio/featured/Willa_3829-preview.jpg",
+      width: 3000,
+      height: 2000,
+      alt: "Fine art nude — woman standing confidently before floor-to-ceiling window, natural light, Houston TX",
+    },
   },
 
   privacy: {
-    title: 'Privacy Policy',
-    description: 'Privacy policy for Banafrit Photography.',
+    title: "Privacy Policy",
+    description: "Privacy policy for Banafrit Photography.",
     ogImage: defaultOgImage,
   },
-} satisfies Record<string, PageSeo>
+} satisfies Record<string, PageSeo>;
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 export interface OgImage {
-  url: string
-  width: number
-  height: number
-  alt: string
+  url: string;
+  width: number;
+  height: number;
+  alt: string;
 }
 
 export interface PageSeo {
-  title: string
-  description: string
-  ogImage?: OgImage
+  title: string;
+  description: string;
+  ogImage?: OgImage;
 }

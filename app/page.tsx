@@ -26,7 +26,7 @@ export default function HomePage() {
         <SelectedWork />
         {/* <VideoSection /> */}
         <NewsletterSignup />
-        <Featured imageSrc="/images/portfolio/featured/Willa_4893-preview.jpg" />
+        <Featured imageSrc="/images/portfolio/featured/Willa_3829-preview.jpg" />
         <Suspense fallback={<ShopSkeleton />}>
           <ShopSection />
         </Suspense>

@@ -2,12 +2,26 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/app/components/Nav";
 import Footer from "@/app/components/Footer";
-import { pages } from "@/data/seo";
+import { pages, siteName } from "@/data/seo";
+
+const og = pages.featured.ogImage!;
 
 export const metadata = {
   title: pages.featured.title,
   description: pages.featured.description,
-  openGraph: { images: [pages.featured.ogImage] },
+  openGraph: {
+    type: "website" as const,
+    siteName,
+    title: pages.featured.title,
+    description: pages.featured.description,
+    images: [og],
+  },
+  twitter: {
+    card: "summary_large_image" as const,
+    title: pages.featured.title,
+    description: pages.featured.description,
+    images: [og.url],
+  },
 };
 
 const SHOOT = {
