@@ -1,77 +1,21 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import Nav from '@/app/components/Nav'
-import Footer from '@/app/components/Footer'
+import { notFound } from 'next/navigation'
 
-// Replace these with real data per shoot
-const SHOOT = {
-  title: 'Shoot Title',
-  date: 'Month Day, Year',
-  location: 'Location',
-  model: 'Model Name',
-  statement: 'A short artist statement about this shoot. What was the mood, the light, the intention behind the work.',
-  heroImage: '/images/portfolio/placeholder.jpg',
-  heroAlt: 'Hero image alt text',
-  images: [
-    { src: '/images/portfolio/placeholder.jpg', alt: 'Image one' },
-    { src: '/images/portfolio/placeholder.jpg', alt: 'Image two' },
-    { src: '/images/portfolio/placeholder.jpg', alt: 'Image three' },
-    { src: '/images/portfolio/placeholder.jpg', alt: 'Image four' },
-    { src: '/images/portfolio/placeholder.jpg', alt: 'Image five' },
-    { src: '/images/portfolio/placeholder.jpg', alt: 'Image six' },
-  ],
+// No published shoots yet — all slugs return 404.
+// When you're ready to add a shoot:
+//   1. Add its data to a shoots data file (e.g. data/shoots.ts)
+//   2. Add the slug to generateStaticParams below
+//   3. Replace the notFound() call with real page rendering
+
+export function generateStaticParams() {
+  // Return an empty array until real shoots are added.
+  return []
 }
 
+// With an empty generateStaticParams and dynamicParams = false,
+// any /shoots/[slug] URL returns a proper 404 instead of rendering
+// placeholder content that Google would treat as thin/duplicate pages.
+export const dynamicParams = false
+
 export default function ShootPage() {
-  return (
-    <div className="site">
-      <Nav />
-
-      {/* Hero */}
-      <div className="shoot-hero">
-        <div className="shoot-hero-image">
-          <Image
-            src={SHOOT.heroImage}
-            alt={SHOOT.heroAlt}
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
-          <div className="shoot-hero-overlay" />
-        </div>
-        <div className="shoot-hero-content">
-          <p className="hero-tag">{SHOOT.date} · {SHOOT.location}</p>
-          <h1 className="hero-headline">{SHOOT.title}</h1>
-          <p className="hero-sub">With {SHOOT.model}</p>
-        </div>
-      </div>
-
-      {/* Statement */}
-      <div className="shoot-statement">
-        <p className="shoot-statement-text">{SHOOT.statement}</p>
-      </div>
-
-      {/* Image grid */}
-      <div className="shoot-grid">
-        {SHOOT.images.map((img, i) => (
-          <div key={i} className="shoot-grid-item">
-            <Image
-              src={img.src}
-              alt={img.alt}
-              fill
-              style={{ objectFit: 'cover' }}
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-        ))}
-      </div>
-
-      {/* Back nav */}
-      <div className="shoot-back">
-        <Link href="/portfolio" className="text-link"><span aria-hidden="true">← </span>Back to portfolio</Link>
-      </div>
-
-      <Footer />
-    </div>
-  )
+  notFound()
 }
