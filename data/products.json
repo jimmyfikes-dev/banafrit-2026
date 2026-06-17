@@ -1,12 +1,39 @@
 [
   {
     "id": "1",
+    "name": "Fine Art Figure Study Print | Anonymous Portrait | White Fabric Wall Art",
+    "price": "$35 to $130",
+    "tag": "Print",
+    "orientation": "portrait",
+    "image": "/images/portfolio/Willa_4355-preview.jpg",
+    "url": "https://www.etsy.com/listing/4522396282/"
+  },
+  {
+    "id": "1",
+    "name": "Fine Art Boudoir Portrait Print | Intimate Bathroom Study | Natural Light Wall Art",
+    "price": "$35 to $130",
+    "tag": "Print",
+    "orientation": "portrait",
+    "image": "/images/portfolio/Willa_4896-preview.jpg",
+    "url": "https://www.etsy.com/listing/4520357220/"
+  },
+  {
+    "id": "1",
     "name": "Topless Boudoir Portrait | Fine Art Figure Study | Hahnemuhle Bamboo Gloss Baryta | Multiple Sizes",
     "price": "$35 to $130",
     "tag": "Print",
     "orientation": "portrait",
     "image": "/images/portfolio/waiting-game.jpg",
-    "url": "https://www.etsy.com/listing/4469255312/s"
+    "url": "https://www.etsy.com/listing/4469255312/"
+  },
+  {
+    "id": "1",
+    "name": "Fine Art Boudoir Print | Natural Light Figure Study | Movement Portrait Wall Art",
+    "price": "$35 to $130",
+    "tag": "Print",
+    "orientation": "portrait",
+    "image": "/images/portfolio/Willa_3823-preview.jpg",
+    "url": "https://www.etsy.com/listing/4522393316/"
   },
   {
     "id": "2",
@@ -16,6 +43,15 @@
     "orientation": "portrait",
     "image": "/images/portfolio/sumptuous.jpg",
     "url": "https://www.etsy.com/listing/4512320733/"
+  },
+  {
+    "id": "3",
+    "name": "Fine Art Boudoir Print | Natural Light Figure Study | Topless Portrait Wall Art",
+    "price": "$35 to $130",
+    "tag": "Print",
+    "orientation": "landscape",
+    "image": "/images/portfolio/Willa_3763-preview-web.jpg",
+    "url": "https://www.etsy.com/listing/4520348420/"
   },
   {
     "id": "3",
@@ -43,6 +79,15 @@
     "orientation": "landscape",
     "image": "/images/portfolio/nude/IMG_7055-preview.jpg",
     "url": "https://www.etsy.com/listing/4472356140/"
+  },
+  {
+    "id": "6 ",
+    "name": "Fine Art Nude Portrait Print | Architectural Figure Study | Large Format Wall Art",
+    "price": "$35 to $130",
+    "tag": "Print",
+    "orientation": "landscape",
+    "image": "/images/portfolio/Willa_4441-preview.jpg",
+    "url": "https://www.etsy.com/listing/4520350337/"
   },
   {
     "id": "6 ",
